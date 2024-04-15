@@ -5,7 +5,8 @@ body {
 
 main {
     padding-bottom: 2em;
-    background: radial-gradient(circle, rgba(7, 59, 58, 0.9) 0%, rgba(7, 59, 58, 0.7) 50%, rgba(7, 59, 58, 0.5) 100%);
+    /* background: radial-gradient(circle, rgba(7, 59, 58, 0.9) 0%, rgba(7, 59, 58, 0.7) 50%, rgba(7, 59, 58, 0.5) 100%); */
+    background: radial-gradient(circle, rgba(7, 59, 58, 0.3) 0%, rgba(7, 59, 58, 0.2) 50%, rgba(7, 59, 58, 0.1) 100%);
 }
 
 
