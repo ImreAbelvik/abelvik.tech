@@ -8,119 +8,193 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
+    <button id="language-toggle" onclick="toggle()" >
+        Switch to English
+    </button> 
+
     <header>
         <h1 class="logo-text">Abelvik.tech</h1>
     </header>
 
     <main>
-        <div class="info">
-            <div class="info-text">
-                <h3>Efficient data and IT solutions.</h3>
-                <p>Discover your IT possibilities now.</p>
-                <a href="#Quote">Get Quote</a>
+
+        <!-- English version of page.-->
+        <section id="content-en" class="contentLang">
+            <div class="info">
+                <div class="info-text">
+                    <h3>Efficient data and IT solutions.</h3>
+                    <p>Discover your IT possibilities now.</p>
+                    <a href="#Quote-en">Get Quote</a>
+                </div>
             </div>
-        </div>
-    
-        <div class="partnere">
-            <div class="section-header">
-              <h2>My customers</h2>
-              <p>Here are some of our customers</p>
+        
+            <div class="partnere">
+                <div class="section-header">
+                <h2>My customers</h2>
+                <p>Here are some of our customers</p>
+                </div>
+            
+                <div class="partner-container">
+                <a href="http://mlfinans.no/" class="partner-link" target="_blank">
+                    <div class="partner-box">
+                            <img src="logo(OPT).png" alt="Logo til mlfinans">
+                            <h3>ML Finans</h3>
+                            <p>Property developer in Trondheim</p>
+                        </div>
+                    </a>
+                    <!-- Add more partner boxes here if needed -->
+                </div>
             </div>
-          
-            <div class="partner-container">
-              <a href="http://mlfinans.no/" class="partner-link" target="_blank">
-                <div class="partner-box">
-                        <img src="logo(OPT).png" alt="Logo til mlfinans">
-                        <h3>ML Finans</h3>
-                        <p>Property developer in Trondheim</p>
+            
+            <div class="about">
+                <h2>About me.</h2>
+                <p>As a student working independently, my extensive practical experience empowers me to deliver accurate and efficient data solutions. Through hands-on learning and dedication, I have honed my skills to handle large volumes of data with precision and attention to detail. Trust in my expertise to ensure client satisfaction and propel your projects forward with dependable results.</p>
+                <img src="bilde.jpg" alt="Img of person">
+            </div>
+
+            <div id="Quote-en" class="offers">
+                <small>What I can offer you.</small>
+                <h2>Smart Solutions for Your Business</h2>
+            
+                <div class="offers-box">
+                    <div class="content">
+                        <h3>Data Collecting</h3>
+                        <p>Efficiently gather and organize data from various sources to provide valuable insights for your business.</p>
                     </div>
-                </a>
-                <!-- Add more partner boxes here if needed -->
-            </div>
-        </div>
-        
-        <div class="about">
-            <h2>About me.</h2>
-            <p>As a student working independently, my extensive practical experience empowers me to deliver accurate and efficient data solutions. Through hands-on learning and dedication, I have honed my skills to handle large volumes of data with precision and attention to detail. Trust in my expertise to ensure client satisfaction and propel your projects forward with dependable results.</p>
-            <img src="bilde.jpg" alt="Img of person">
-        </div>
-        
-        <!--
-        <div id="Quote" class="container">
-            <h2>Contact Form</h2>
-            <form action="your_script_to_handle_form.php" method="post">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
-            
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
-            
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your email.." required>
-                <br>
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
-            
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-        -->
+                    <button class="quote-button">Get Quote</button>
+                </div>
+                
+                <div class="offers-box">
+                    <div class="content">
+                        <h3>Data Processing</h3>
+                        <p>Streamline your data processing workflows to optimize efficiency and enhance decision-making processes.</p>
+                    </div>
+                    <button class="quote-button">Get Quote</button>
+                </div>
+                
+                <div class="offers-box">
+                    <div class="content">
+                        <h3>Data Dashboard Design</h3>
+                        <p>Create visually engaging and user-friendly dashboards to visualize key metrics and trends in your data.</p>
+                    </div>
+                    <button class="quote-button">Get Quote</button>
+                </div>
+                
+                <div class="offers-box">
+                    <div class="content">
+                        <h3>Website Building</h3>
+                        <p>Develop customized websites tailored to your business needs, ensuring a seamless online presence.</p>
+                    </div>
+                    <button class="quote-button">Get Quote</button>
+                </div>
 
-        <div id="Quote" class="offers">
-            <small>What I can offer you.</small>
-            <h2>Smart Solutions for Your Business</h2>
+                <div class="offers-box">
+                    <div class="content">
+                        <h3>Ghost Writing</h3>
+                        <p>Write engaging posts for various social media platforms to enhance your online presence.</p>
+                    </div>
+                    <button class="quote-button">Get Quote</button>
+                </div>
+                
+                <div class="offers-box">
+                    <div class="content">
+                        <h3>Other</h3>
+                        <p>Explore our other services tailored to meet your specific requirements. Contact us for more information.</p>
+                    </div>
+                    <button class="quote-button">Get Quote</button>
+                </div>
+                
+            </div>
+        </section>
         
-            <div class="offers-box">
-                <div class="content">
-                    <h3>Data Collecting</h3>
-                    <p>Efficiently gather and organize data from various sources to provide valuable insights for your business.</p>
+
+        <!-- Norske verson -->
+        <section id="content-no" class="contentLang active">
+            <div class="info">
+                <div class="info-text">
+                    <h3>Effektive data- og IT-løsninger.</h3>
+                    <p>Oppdag dine IT-muligheter nå.</p>
+                    <a href="#Quote-no">Få tilbud</a>
                 </div>
-                <button class="quote-button">Get Quote</button>
+            </div>
+        
+            <div class="partnere">
+                <div class="section-header">
+                <h2>Mine kunder</h2>
+                <p>Her er noen av våre kunder</p>
+                </div>
+            
+                <div class="partner-container">
+                <a href="http://mlfinans.no/" class="partner-link" target="_blank">
+                    <div class="partner-box">
+                            <img src="logo(OPT).png" alt="Logo til mlfinans">
+                            <h3>ML Finans</h3>
+                            <p>Eiendomsutvikler i Trondheim</p>
+                        </div>
+                    </a>
+                    <!-- Add more partner boxes here if needed -->
+                </div>
             </div>
             
-            <div class="offers-box">
-                <div class="content">
-                    <h3>Data Processing</h3>
-                    <p>Streamline your data processing workflows to optimize efficiency and enhance decision-making processes.</p>
-                </div>
-                <button class="quote-button">Get Quote</button>
-            </div>
-            
-            <div class="offers-box">
-                <div class="content">
-                    <h3>Data Dashboard Design</h3>
-                    <p>Create visually engaging and user-friendly dashboards to visualize key metrics and trends in your data.</p>
-                </div>
-                <button class="quote-button">Get Quote</button>
-            </div>
-            
-            <div class="offers-box">
-                <div class="content">
-                    <h3>Website Building</h3>
-                    <p>Develop customized websites tailored to your business needs, ensuring a seamless online presence.</p>
-                </div>
-                <button class="quote-button">Get Quote</button>
+            <div class="about">
+                <h2>About me.</h2>
+                <p>Som student som jobber selvstendig, gir min omfattende praktiske erfaring meg muligheten til å levere nøyaktige og effektive løsninger for data. Gjennom praktisk læring og dedikasjon har jeg utviklet ferdighetene mine til å håndtere store mengder data med presisjon og oppmerksomhet til detaljer. Stol på min ekspertise for å sikre kundetilfredshet og drive prosjektene dine videre med pålitelige resultater.</p>               <img src="bilde.jpg" alt="Img of person">
             </div>
 
-            <div class="offers-box">
-                <div class="content">
-                    <h3>Ghost Writing</h3>
-                    <p>Write engaging posts for various social media platforms to enhance your online presence.</p>
-                </div>
-                <button class="quote-button">Get Quote</button>
-            </div>
+            <div id="Quote-no" class="offers">
+                <small>Hva jeg kan tilby deg.</small>
+                <h2>Smarte løsninger for din bedrift</h2>
             
-            <div class="offers-box">
-                <div class="content">
-                    <h3>Other</h3>
-                    <p>Explore our other services tailored to meet your specific requirements. Contact us for more information.</p>
+                <div class="offers-box">
+                    <div class="content">
+                        <h3>Datainnsamling</h3>
+                        <p>Effektivt samle inn og organisere data fra ulike kilder for å gi verdifulle innsikter til din bedrift.</p>
+                    </div>
+                    <button class="quote-button">Få tilbud</button>
                 </div>
-                <button class="quote-button">Get Quote</button>
+                
+                <div class="offers-box">
+                    <div class="content">
+                        <h3>Databehandling</h3>
+                        <p>Strømlinjeform dine data-behandlingsprosesser for å optimalisere effektiviteten og forbedre beslutningsprosessene.</p>
+                    </div>
+                    <button class="quote-button">Få tilbud</button>
+                </div>
+                
+                <div class="offers-box">
+                    <div class="content">
+                        <h3>Design av datadashbord</h3>
+                        <p>Lag visuelt attraktive og brukervennlige dashbord for å visualisere nøkkelmetrikker og trender i dine data.</p>
+                    </div>
+                    <button class="quote-button">Få tilbud</button>
+                </div>
+                
+                <div class="offers-box">
+                    <div class="content">
+                        <h3>Nettstedsbygging</h3>
+                        <p>Utvikle tilpassede nettsider skreddersydd for din bedrifts behov, og sikre en sømløs tilstedeværelse på nett.</p>
+                    </div>
+                    <button class="quote-button">Få tilbud</button>
+                </div>
+
+                <div class="offers-box">
+                    <div class="content">
+                        <h3>Ghost Writing</h3>
+                        <p>Skriver engasjerende innlegg for ulike sosiale medieplattformer for å forbedre din online tilstedeværelse.</p>
+                    </div>
+                    <button class="quote-button">Få tilbud</button>
+                </div>
+                
+                <div class="offers-box">
+                    <div class="content">
+                        <h3>Annet</h3>
+                        <p>Utforsk våre øvrige tjenester tilpasset dine spesifikke behov. Kontakt oss for mer informasjon.</p>
+                    </div>
+                    <button class="quote-button">Få tilbud</button>
+                </div>
+                
             </div>
-            
-        </div>
-        
-        
+        </section>
         
         
 
@@ -145,5 +219,24 @@
 });
 
     </script>
+
+<script>
+    function toggle() {
+    var englishContent = document.getElementById('content-en');
+    var norwegianContent = document.getElementById('content-no');
+    var button = document.getElementById('language-toggle');
+
+    if (englishContent.classList.contains('active')) {
+        englishContent.classList.remove('active');
+        norwegianContent.classList.add('active');
+        button.innerText = 'Switch to English';
+    } else {
+        englishContent.classList.add('active');
+        norwegianContent.classList.remove('active');
+        button.innerText = 'Switch to Norwegian';
+    }
+}
+
+</script>
 </body>
 </html>

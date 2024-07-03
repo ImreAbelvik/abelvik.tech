@@ -221,6 +221,20 @@ h2, .offers-box h3 {
 }
 
 
+/* Language button */
+.contentLang { display: none; }
+.contentLang.active { display: block; }
+
+#language-toggle {
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    background-color: rgba(7, 59, 58, 0.9);
+    color: #ccc;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
 
 /* For screens smaller than 768px */
 @media screen and (max-width: 768px) {
@@ -233,6 +247,10 @@ h2, .offers-box h3 {
     .partner-link {
         flex: 1 1 calc(50%); /* 2 partners per row on smaller screens */
         max-width: calc(50%); /* 2 partners per row on smaller screens */
+    }
+
+    #language-toggle {
+        display: none;
     }
 }
 
