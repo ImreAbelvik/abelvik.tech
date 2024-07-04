@@ -112,6 +112,7 @@ header {
 
 
 .about {
+    max-width: 1200px;
     padding: 1em;
     background-color: #ddd;
     text-align: center;
