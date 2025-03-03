@@ -1,136 +1,147 @@
+/* General Styles */
 body {
     margin: 0;
-    font-family:  "Roboto", Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
 }
 
 main {
     padding-bottom: 2em;
-    /* background: radial-gradient(circle, rgba(7, 59, 58, 0.9) 0%, rgba(7, 59, 58, 0.7) 50%, rgba(7, 59, 58, 0.5) 100%); */
-    background: radial-gradient(circle, rgba(7, 59, 58, 0.3) 0%, rgba(7, 59, 58, 0.2) 50%, rgba(7, 59, 58, 0.1) 100%);
+    background: radial-gradient(circle, rgba(7, 59, 58, 0.4) 0%, rgba(7, 59, 58, 0.2) 50%, rgba(7, 59, 58, 0.1) 100%);
 }
 
-
+/* Header */
 header {
-    background-color: #ffffff; /* Background color of the header */
-    padding-top: 1em;
-    padding-bottom: 0.3em;
-    text-align: center; /* Center-align the logo text */
+    background-color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* CSS for the logo text */
 .logo-text, footer h2 {
-    font-family: 'Arial Black', Arial, sans-serif; /* Choose a bold font */
-    font-size: 2em; /* Adjust the font size */
-    color: #333333; /* Color of the logo text */
-    text-transform: uppercase; /* Convert text to uppercase */
-    letter-spacing: 2px; /* Add letter spacing for a stylish look */
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-size: 2em;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
 }
 
+/* Info Section */
 .info {
     position: relative;
-    background-size: cover;
-    background-position: center;
-    background-image: url('ai3.png');
+    background: url('ai3.png') center/cover no-repeat;
     min-height: 50vh;
 }
 
 .info-text {
     position: absolute;
-    top: 50%; /* Position the top at 50% */
-    transform: translateY(-50%); /* Adjust vertically by half of its own height */
-    left: 20em; /* Adjust as needed */
-    padding: 1em;
-    background: rgba(51, 51, 51, 0.7);
-    color: #ccc;
-    font-size: 1.5em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.5em;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 1.3em;
     text-align: center;
+    border-radius: 8px;
 }
 
 .info-text h3 {
     font-size: 1.4em;
+    margin-bottom: 0.5em;
 }
 
 .info-text a {
+    display: inline-block;
     background-color: rgba(7, 59, 58, 0.9);
-    color: #ccc;
-    text-decoration: inherit;
-    margin: 0.5em;
-    padding: 0.5em;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.6em 1.2em;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
 }
 
+.info-text a:hover {
+    background-color: rgba(7, 59, 58, 1);
+}
 
+/* Partner Section */
 .partnere {
-    align-items: center;
+    text-align: center;
     padding-bottom: 2em;
 }
-  
+
 .section-header {
-    text-align: center;
     margin-bottom: 20px;
+    font-size: 1.8em;
 }
-  
+
 .partner-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Spacing between partner boxes */
+    gap: 20px;
 }
-  
+
 .partner-link {
-    flex: 1 1 calc(30%); /* 3 partners per row */
-    max-width: calc(30%); /* 3 partners per row */
-    text-decoration: none; /* Remove default link underline */
-    color: inherit; /* Inherit color from parent */
+    flex: 1 1 30%;
+    max-width: 30%;
+    text-decoration: none;
+    color: inherit;
 }
-  
+
 .partner-box {
     display: block;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: 11px;
     text-align: center;
-    transition: transform 0.3s; /* Smooth transition on hover */
-    background-color: rgba(51, 51, 51, 0.2);
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+    background-color: rgba(51, 51, 51, 0.1);
 }
-  
+
 .partner-box img {
     max-width: 60%;
+    transition: transform 0.3s ease-in-out;
 }
-  
+
 .partner-box h3 {
     margin-top: 10px;
     font-size: 18px;
 }
-  
-.partner-box p {
-    font-size: 14px;
-}
-  
-/* Increase size on hover */
-.partner-link:hover .partner-box {
-    transform: scale(1.08);
+
+.partner-box:hover {
+    transform: scale(1.05);
 }
 
+.partner-box:hover img {
+    transform: scale(1.1);
+}
 
+/* About Section */
 .about {
-    padding: 1em;
-    background-color: #ddd;
+    padding: 2em;
+    background-color: #eee;
     text-align: center;
 }
 
 .about p {
-    width: 40em;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 40em;
+    margin: 0 auto;
     font-size: 1.1em;
-} 
-
-.about img {
-    height: auto;
-    width: 20em;
+    line-height: 1.6;
 }
 
+.about img {
+    width: 20em;
+    height: auto;
+    margin-top: 1em;
+    border-radius: 8px;
+}
 
-
+/* Contact Form */
 .container {
     max-width: 400px;
     margin: 0 auto;
@@ -145,7 +156,7 @@ input[type="text"], textarea {
     box-sizing: border-box;
 }
 
-  input[type="submit"] {
+input[type="submit"] {
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
@@ -153,43 +164,50 @@ input[type="text"], textarea {
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
+    transition: background-color 0.3s ease-in-out;
 }
 
 input[type="submit"]:hover {
     background-color: #45a049;
 }
 
+/* Footer */
 footer {
     text-align: center;
+    padding: 1.5em 0;
+    background-color: #222;
+    color: #fff;
 }
 
-
-/* Offers */
+/* Offers Section */
 .offers {
     text-align: center;
     margin-top: 20px;
-    padding: 0 25em;
+    padding: 0 10%;
 }
 
 .offers-box {
-    /*border: 1px solid #ccc;
-    border-radius: 5px; */
     border-bottom: 1px solid #ccc;
     padding: 20px;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.offers-box:hover {
+    transform: scale(1.03);
 }
 
 .offers-box h3 {
     font-size: 1.5em;
-    color: #333;
+    color: #222;
     margin-bottom: 10px;
 }
 
 .offers-box p {
-    color: #3a3a3a;
+    color: #444;
     margin-bottom: 10px;
     line-height: 1.5;
 }
@@ -200,108 +218,86 @@ footer {
     padding: 15px 20px;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease-in-out;
+    min-width: 15em;
 }
 
 .offers-box button:hover {
-    background-color: #45a049;
+    background-color: #3583a3;
 }
 
-small {
-    color: #222;
-    font-size: 1.3em;
+/* Language Toggle */
+.contentLang {
+    display: none;
 }
 
-h2, .offers-box h3 {
-    color: #383838;
+.contentLang.active {
+    display: block;
 }
-
-.offers-box button {
-    min-width: 20em;
-    max-width: 20em;
-}
-
-
-/* Language button */
-.contentLang { display: none; }
-.contentLang.active { display: block; }
 
 #language-toggle {
     position: absolute;
     top: 35px;
     right: 10px;
     background-color: rgba(7, 59, 58, 0.9);
-    color: #ccc;
-    margin: 0.5em;
-    padding: 0.5em;
+    color: #fff;
+    padding: 0.6em 1.2em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
+#language-toggle:hover {
+    background-color: rgba(7, 59, 58, 1);
+}
 
-/* For screens smaller than 768px */
+/* Responsive Design */
 @media screen and (max-width: 768px) {
     .info-text {
-        left: 0; /* Adjust the position to fit smaller screens */
-        width: 100%; /* Make the text container full width */
-        padding: 0.5em; /* Adjust padding for smaller screens */
+        left: 10%;
+        width: 80%;
+        font-size: 1.2em;
     }
 
     .partner-link {
-        flex: 1 1 calc(50%); /* 2 partners per row on smaller screens */
-        max-width: calc(50%); /* 2 partners per row on smaller screens */
+        flex: 1 1 45%;
+        max-width: 45%;
     }
 
-    #language-toggle {
-        display: none;
-    }
-}
-
-/* For screens smaller than 480px */
-@media screen and (max-width: 480px) {
-    .info-text {
-        font-size: 1.2em; /* Adjust font size for smaller screens */
-    }
-
-    .partner-link {
-        flex: 1 1 calc(100%); /* 1 partner per row on smallest screens */
-        max-width: calc(100%); /* 1 partner per row on smallest screens */
-    }
-
-    .about p {
-        width: 100%; /* Make paragraph width full for smallest screens */
-    }
-
-    .about img {
-        width: 80%; /* Adjust image width for smallest screens */
-    }
-
-    .container {
-        max-width: 100%; /* Make container full width for smallest screens */
-        padding: 0 10px; /* Add padding for smallest screens */
-    }
-}
-
-/* CSS for phones */
-@media only screen and (max-width: 600px) {
     .offers {
-        padding: 0 1em; /* Adjust padding for smaller screens */
+        padding: 0 5%;
     }
 
     .offers-box {
-        flex-direction: column; /* Stack boxes vertically on smaller screens */
+        flex-direction: column;
     }
 
     .offers-box button {
-        width: 100%; /* Make buttons full width on smaller screens */
-        margin-top: 10px; /* Add some space between stacked buttons */
-        min-width: unset; /* Reset min-width for buttons */
-        max-width: unset; /* Reset max-width for buttons */
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .info-text {
+        font-size: 1em;
+        width: 90%;
     }
 
-    .offers-box h3 {
-        font-size: 1.2em; /* Decrease heading size for smaller screens */
+    .partner-link {
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 
-    small {
-        font-size: 1em; /* Decrease small text size for smaller screens */
+    .about p {
+        width: 90%;
+    }
+
+    .about img {
+        width: 70%;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
     }
 }
